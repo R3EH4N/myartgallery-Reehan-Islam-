@@ -1,0 +1,30 @@
+/* Contact Section */
+.contact-info {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+.contact-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.contact-info a {
+    color: #2d3436;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #ff6f61;
+}
