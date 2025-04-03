@@ -1,0 +1,57 @@
+/* Gallery */
+body {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 1.5rem; /* Space between items */
+    padding: 2rem; /* Padding around the grid */
+}
+
+/* Art Piece Container */
+.art-piece {
+    position: relative; /* For aspect ratio container */
+    overflow: hidden; /* Hide overflow from image scaling */
+    border-radius: 8px; /* Rounded corners */
+    background: white; /* White background for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.art-piece:hover {
+    transform: translateY(-5px); /* Slightly lift the container on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Art Piece Image */
+.art-piece img {
+    width: 100%; /* Make images fill their container */
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Crop to fit */
+    border-radius: 8px 8px 0 0; /* Rounded corners only at the top */
+}
+
+/* Art Descriptions */
+.art-piece p {
+    padding: 1rem; /* Increased padding */
+    margin: 0; /* Remove default margin */
+    font-size: 1.2rem; /* Increased font size */
+    text-align: center; /* Center-align the text */
+    color: #333; /* Dark gray text for readability */
+    background: white; /* Ensure text is readable */
+    font-weight: bold; /* Make text bold */
+    border-radius: 0 0 8px 8px; /* Rounded corners only at the bottom */
+}
+.art-piece img {
+    width: 100%; /* Make images fill their container */
+    height: 200px; /* Fixed height for consistency */
+    object-fit: contain; /* Show the entire image without cropping */
+    border: none; /* Remove any borders */
+    border-radius: 8px 8px 0 0; /* Rounded corners only at the top */
+    background: transparent; /* Ensure the background is transparent */
+}
